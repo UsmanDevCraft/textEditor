@@ -1,12 +1,12 @@
 import React from 'react'
 
-const About = () => {
+const About = (props) => {
   return (
     <div className='container my-5'>
         <div className="accordion" id="accordionPanelsStayOpenExample">
-            <div className="accordion-item">
+            <div className={`accordion-item bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`}>
                 <h2 className="accordion-header">
-                <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <button className={`accordion-button bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`} type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                 <strong>1. Streamlined Efficiency:</strong>
                 </button>
                 </h2>
@@ -16,9 +16,9 @@ const About = () => {
                 </div>
                 </div>
             </div>
-            <div className="accordion-item">
+            <div className={`accordion-item bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`}>
                 <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <button className={`accordion-button collapsed bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`} type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                 <strong>2. Dynamic Flexibility:</strong>
                 </button>
                 </h2>
@@ -28,9 +28,9 @@ const About = () => {
                 </div>
                 </div>
             </div>
-            <div className="accordion-item">
+            <div className={`accordion-item bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`}>
                 <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button className={`accordion-button collapsed bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`} type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                 <strong>3. Enhanced Focus:</strong>
                 </button>
                 </h2>
@@ -40,9 +40,9 @@ const About = () => {
                 </div>
                 </div>
             </div>
-            <div className="accordion-item">
+            <div className={`accordion-item bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`}>
                 <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                <button className={`accordion-button collapsed bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`} type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                 <strong>4. Effortless Navigation:</strong>
                 </button>
                 </h2>
@@ -52,9 +52,9 @@ const About = () => {
                 </div>
                 </div>
             </div>
-            <div className="accordion-item">
+            <div className={`accordion-item bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`}>
                 <h2 className="accordion-header">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                <button className={`accordion-button collapsed bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"#212121":"white"}`} type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
                 <strong>5. Limitless Possibilities:</strong>
                 </button>
                 </h2>

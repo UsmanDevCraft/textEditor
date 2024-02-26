@@ -12,15 +12,15 @@ import {
 
 function App() {
   //useState and function for changing mode
-  const [mode, setMode] = useState("success");
+  const [mode, setMode] = useState("dark");
 
   const changeMode = ()=>{
-    if(mode === "success"){
-      setMode("dark");
+    if(mode === "dark"){
+      setMode("success");
       document.body.style.backgroundColor = "#212121";
       document.body.style.color = "white"
     }else{
-      setMode("success");
+      setMode("dark");
       document.body.style.backgroundColor = "#ffffff";
       document.body.style.color = "#212121"
     };
@@ -33,11 +33,11 @@ function App() {
       <Switch>
           <Route exact path="/">
             <div className='container'>
-              <Textarea />
+              <Textarea mode={mode}/>
             </div>
           </Route>
           <Route exact path="/about">
-            <About />
+            <About mode={mode}/>
           </Route>
       </Switch>
     </Router>

@@ -59,19 +59,19 @@ const Textarea = (props) => {
       <div className='container my-4'>
           <h1 className=''>Text-Editor - word counter, text editor, remove spaces etc</h1>
           <div className="form-floating my-4">
-              <textarea className="form-control" value={text} placeholder="Leave a comment here" id="floatingTextarea2" onChange={textInside} style={styleTextarea}>{text}</textarea>
+              <textarea className={`form-control bg-${props.mode === "dark"?"white":"dark"} text-${props.mode === "dark"?"black":"white"}`} value={text} placeholder="Leave a comment here" id="floatingTextarea2" onChange={textInside} style={styleTextarea}>{text}</textarea>
               <label htmlFor="floatingTextarea2">Write your text here</label>
           </div>
 
 
           {/* Code for buttons functions */}
-          <button type="button" className="btn btn-success mx-1 my-1" onClick={upperCaseFunc}>Convert To Uppercase</button>
-          <button type="button" className="btn btn-success mx-1 my-1" onClick={lowerCaseFunc}>Convert To Lowercase</button>
-          <button type="button" className="btn btn-success mx-1 my-1" onClick={boldTextFunc}><b>B</b></button>
-          <button type="button" className="btn btn-success mx-1 my-1" onClick={underlineTextFunc}><u>U</u></button>
-          <button type="button" className="btn btn-success mx-1 my-1" onClick={italicTextFunc}><i>I</i></button>
-          <button type="button" className="btn btn-success mx-1 my-1" onClick={clearTextFunc}>Clear Text</button>
-          <button type="button" className="btn btn-success mx-1 my-1" onClick={copyTextFunc}>Copy Text</button>
+          <button type="button" className={`btn btn-${props.mode} mx-1 my-1`} onClick={upperCaseFunc}>Convert To Uppercase</button>
+          <button type="button" className={`btn btn-${props.mode} mx-1 my-1`} onClick={lowerCaseFunc}>Convert To Lowercase</button>
+          <button type="button" className={`btn btn-${props.mode} mx-1 my-1`} onClick={boldTextFunc}><b>B</b></button>
+          <button type="button" className={`btn btn-${props.mode} mx-1 my-1`} onClick={underlineTextFunc}><u>U</u></button>
+          <button type="button" className={`btn btn-${props.mode} mx-1 my-1`} onClick={italicTextFunc}><i>I</i></button>
+          <button type="button" className={`btn btn-${props.mode} mx-1 my-1`} onClick={clearTextFunc}>Clear Text</button>
+          <button type="button" className={`btn btn-${props.mode} mx-1 my-1`} onClick={copyTextFunc}>Copy Text</button>
           {/* <button type="button" className="btn btn-success mx-1 my-1" onClick={removeExtraSpaceFunc}>Remove Extra Spaces</button> */}
       </div>
 
